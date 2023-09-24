@@ -1,0 +1,281 @@
+.container_header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+}
+#logo {
+  width: 110px;
+  position: absolute;
+  top: 0px;
+}
+
+.header {
+  height: 60px;
+  background-color: #0984e3;
+}
+
+.header_list {
+  padding: 0;
+  margin-left: -5px;
+  margin-top: 20px;
+}
+
+.nav_item,
+.nav_item_link {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  height: 100%;
+  padding: 0;
+}
+
+.nav_item,
+.nav_item_link .nav_icon-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav_item {
+  margin: 0 10px 0 0;
+  position: relative;
+}
+
+
+/* Hover QR-code */
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.font-weight {
+  font-weight: 500;
+}
+
+.nav_item-line::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.nav_item-line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: solid 2px #ccc;
+  height: 14px;
+  top: 5px;
+  right: -7px;
+}
+
+.nav_item:hover,
+.nav_item_link:hover {
+  color: hsla(0, 0%, 100%, .7);
+  cursor: pointer;
+}
+
+.nav_icon-link {
+  color: #fff;
+}
+
+.nav_icon {
+  font-size: 14px;
+  margin: 0px 4px;
+}
+
+.nav_item .nav_item-nopointer {
+  cursor: text;
+  color: #fff;
+}
+
+.content {
+  margin-top: 60px;
+}
+
+
+/* sidebar */
+
+.sidebar-body {
+  min-height: 100vh;
+  background-color: #202124;
+  overflow: auto;
+  color: #ccc;
+  width:20%;
+}
+
+.account {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0.1px 0 2px black;
+  color: #202124;
+  position: absolute;
+  right: 5px;
+  top: 115%;
+  display: none;
+  animation: hover 0.2s alternate ease-in;
+  padding-top: 10px;
+}
+
+.account_hover:hover .account {
+  display: block;
+}
+
+.account::before {
+  content: "";
+  width: 180px;
+  height: 10px;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+
+.search {
+  position: absolute;
+  top: 70px;
+  background-color: #eff0f5;
+  right: 0;
+}
+
+.search input {
+  padding: 5px 0px 5px 15px;
+  outline: none;
+  border: none;
+  background-color: #eff0f5;
+
+}
+
+.search button,#add_product{
+  outline: none;
+  outline: none;
+  border: none;
+  padding: 5px 15px 5px 15px;
+  background-color: #0984e3;
+  color: #eff0f5;
+}
+
+.search button:hover,#add_product:hover {
+  opacity: 0.8;
+}
+
+.nav_content {
+  width: 120%;
+  height: 60px;
+  background-color: #dcdde1;
+  margin-top: -10px;
+  padding-top: 5px;
+}
+
+.heading_content {
+  margin-left: 10%;
+  font-weight: 500;
+  color: #0984e3;
+}
+
+.content {
+  display: flex;
+}
+.delete {
+  background-color: #de3446;
+  border-radius: 5px;
+  color: #fff;
+}
+.show{
+  background-color: #18a2b9;
+  border-radius: 5px;
+  color: #fff;
+}
+/* Table */
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 0px;
+
+}
+tr {
+  padding-top: 10px;
+  border-bottom: 0.1px solid #ccc;
+}
+
+td {
+  padding: 10px 40px;
+}
+
+img {
+  width: 80px;
+}
+th{
+  /* background-image: linear-gradient(0, #55efc4, #74b9ff); */
+  background-color: #202124;
+  width: 180px;
+  padding: 30px 10px 10px 10px;
+  color: #fff;
+}
+table button {
+  border: none;
+  position: relative;
+}
+/* Form sửa, thêm */
+.form_edit, #form_add{
+  width: 600px;
+  background-color: red;
+  border-radius: 10px;
+  height: 450px;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  display: none;
+  left: 15%;
+  top: 20%;
+}
+.form_edit button, #form_add button{
+  background-color: #55efc4;
+}
+.form_edit input,#form_add input  {
+  padding: 10px 30px;
+  display: block;
+  margin: 12px 0 0px 10%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 500px;
+
+}
+
+.form_edit footer {
+  width: 100%;
+  text-align: center;
+}
+.form_edit button:hover,#form_add button:hover{
+  opacity: 0.8;
+} 
+.form_edit footer h2,  #form_add footer h2{
+  color: aliceblue;
+  background-color: #0984e3;
+  padding: 0px 10px;
+  border-radius: 20px;
+}
+.form_edit header{
+  margin: 0;
+}
+/* Thêm sản phẩm */
+#form_add button{
+  border: none;
+}
+#form_add {
+  position: absolute;
+  display: none;
+  z-index: 10;
+  top: 30%;
+  left: 30%;
+}
+#add_product{
+  border-radius: 5px 5px  0px 0px;
+  margin: 5px 2px 0 2px;
+}
